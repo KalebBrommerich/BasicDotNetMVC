@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
-    <UpToDateCheckBuilt Include="wwwroot/css/input.css" Set="Css" />
+    <UpToDateCheckBuilt Include="wwwroot/css/ouput.css" Set="Css" />
   </ItemGroup>
 
   <Target Name="Tailwind" BeforeTargets="Build">

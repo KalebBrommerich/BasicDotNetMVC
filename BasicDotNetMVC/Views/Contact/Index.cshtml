@@ -1,8 +1,27 @@
 <link rel="stylesheet" href="/css/output.css" />
-@Html.Partial("_Header")
+@using BasicDotNetMVC.Models
+@model List<HeadlineParagraphImageModel>
 
-<div class="text-center">
-    <p>Contact</p>
+<div class="min-h-screen flex flex-col bg-gray-700 text-white">
+
+    @Html.Partial("_Header")
+
+    <div class="flex flex-grow justify-center px-4 py-8 space-x-6">
+
+        <div class="w-3/4">
+            @Html.Partial("_HeadlineParagraphImage", new HeadlineParagraphImageModel
+            {
+                Headline = "Join Super Earth's Elite! Join the Helldivers!",
+                Description = "Something something something, join the Helldivers today and protect Super Earth from the alien menace. Enlist now and become a hero of Super Earth! This is some more text because I can't think of anything else to write. Liberty, Managed Democracy, and Freedom.",
+                BackgroundImageUrl = "/Images/SuperEarthEnlistment.png"
+            })
+        </div>
+
+        <div class="w-1/4 bg-gray-800 rounded-xl shadow-lg">
+            @Html.Partial("_ContactForm")
+        </div>
+    </div>
+
+    @Html.Partial("_Footer")
 </div>
 
-@Html.Partial("_Footer")

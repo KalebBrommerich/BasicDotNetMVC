@@ -1,6 +1,6 @@
 /BasicDotNetMVC/obj
 /BasicDotNetMVC/node_modules
-/BasicDotNetMVC/wwwroot
+/BasicDotNetMVC/wwwroot/lib
 /BasicDotNetMVC/bin
 BasicDotNetMVC/appsettings.Development.json
 BasicDotNetMVC/appsettings.json
