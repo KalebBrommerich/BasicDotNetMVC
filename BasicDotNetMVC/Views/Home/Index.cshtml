@@ -1,9 +1,11 @@
 ﻿<link rel="stylesheet" href="/css/output.css" />
-@Html.Partial("_Header")
+<div class="min-h-screen flex flex-col bg-gray-700 text-white">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>This is the main page</p>
+    @Html.Partial("_Header")
+    <h2 class="text-center text-yellow-300 text-xl font-bold text-shadow-lg/30">Know Your Enemy</h2>
+    <div class="container h-auto object-contain mx-auto mt-2 items-center">
+        @Html.Partial("_Carousel")
+    </div>
+
+    @Html.Partial("_Footer")
 </div>
-
-@Html.Partial("_Footer")

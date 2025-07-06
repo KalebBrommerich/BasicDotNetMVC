@@ -1,0 +1,36 @@
+@model List<BasicDotNetMVC.Models.HeadlineParagraphImageModel>
+
+<div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl shadow-lg">
+    <!-- Carousel Wrapper -->
+    <div id="carouselImages" class="flex transition-transform duration-700 ease-in-out" style="transform: translateX(0%)">
+        
+        @foreach (var slide in Model)
+        {
+                @slide.Headline
+            <div class="w-full flex-shrink-0 h-128">
+                @Html.Partial("_HeadlineParagraphImage", slide)
+            </div>
+        }
+    </div>
+
+    <!-- Prev Button -->
+    <button onclick="changeSlide(-1)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2">
+        ‹
+    </button>
+
+    <!-- Next Button -->
+    <button onclick="changeSlide(1)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2">
+        ›
+    </button>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const images = document.getElementById('carouselImages');
+    const totalSlides = images.children.length;
+
+    function changeSlide(direction) {
+        currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+        images.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+</script>
