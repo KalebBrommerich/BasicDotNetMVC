@@ -32,7 +32,7 @@ public class HomeController : Controller
         new HeadlineParagraphImageModel
         {
             Headline = "",
-            Description = "An ancient, “highly advanced” species, desperately seeking to reclaim their former galactic supremacy. These mind-controlling, xenophobic aliens cannot be reasoned with.",
+            Description = "An ancient, “highly advanced” species, the Illuminate desperately seeking to reclaim their former galactic supremacy. These mind-controlling, xenophobic aliens cannot be reasoned with.",
             BackgroundImageUrl = "/Images/Illuminate.png"
         }
     };
