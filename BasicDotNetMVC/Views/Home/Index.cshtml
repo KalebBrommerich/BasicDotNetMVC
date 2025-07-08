@@ -1,41 +1,122 @@
 ﻿<link rel="stylesheet" href="/css/output.css" />
-
 @using BasicDotNetMVC.Models
-
 <div class="min-h-screen flex flex-col bg-gray-700 text-white justify-center">
-
     @Html.Partial("_Header")
-
     <div class="h-128  w-full flex justify-center items-center">
-    @Html.Partial("_ImageNextToParagraph", new ImageNextToParagraphModel
-    {
+        @Html.Partial("_ImageNextToParagraph", new ImageNextToParagraphModel
+        {
         Description = "Join the Helldivers today and protect Super Earth from the alien menace. Enlist now and become a hero of Super Earth! Liberty, Managed Democracy, and Freedom.",
         BackgroundImageUrl = "/Images/LibertyNeedsYou.png"
-    })
+        })
     </div>
 
+    <section class="h-32 flex items-center justify-center">
+        <hr class="border-yellow-600 border-t-2 w-3/4" />
+    </section>
+
+
     <div class=" w-full h-150 flex justify-center items-center">
-    <div class="w-1/2 h-full flex justify-center items-center ml-4 pl-4">
-        @Html.Partial("_HeadlineParagraphImage", new HeadlineParagraphImageModel
-        {
+        <div class="w-1/2 h-full flex justify-center items-center ml-4 pl-4">
+            @Html.Partial("_HeadlineParagraphImage", new HeadlineParagraphImageModel
+            {
             Headline = "Know Your Enemy",
             Description = "The Helldivers face three main enemies: the Illuminate, the Terminids, and the Automatons. Each enemy poses unique challenges and requires different strategies to defeat. Learn about their strengths and weaknesses to better prepare for your missions.",
             BackgroundImageUrl = "/Images/HelldiverEagle.png"
-        })
-    </div>
-    <div class="container w-1/2 h-auto object-contain mr-4 pl-4 items-center">
-        @Html.Partial("_Carousel")
-    </div>
-    </div>
-    <div class="container w-1/8 h-64 object-contain items-center">
-    @Html.Partial("_Card", new CardModel
-    {
-        Headline = "Test",
-        Description = "Test2",
-        BackgroundImageUrl = "/Images/HelldiversLogo.jpg",
-        ReadMoreLink = "/ReadMore1"
-        })
+            })
+        </div>
+        <div class="container w-1/2 h-auto object-contain mr-4 pl-4 items-center">
+            @Html.Partial("_Carousel")
+        </div>
     </div>
 
+    <section class="h-32 flex items-center justify-center">
+        <hr class="border-yellow-600 border-t-2 w-3/4" />
+    </section>
+
+    <div class="w-full h-auto object-contain items-center">
+        <div class="flex flex-wrap justify-center items-center ">
+            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+                @Html.Partial("_Card", new CardModel
+                {
+                Headline = "Test",
+                Description = "Test2",
+                BackgroundImageUrl = "/Images/HelldiversLogo.jpg",
+                ReadMoreLink = "/ReadMore1"
+                })
+            </div>
+            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+                @Html.Partial("_Card", new CardModel
+                {
+                Headline = "Test",
+                Description = "Test2",
+                BackgroundImageUrl = "/Images/HelldiversLogo.jpg",
+                ReadMoreLink = "/ReadMore1"
+                })
+            </div>
+            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+                @Html.Partial("_Card", new CardModel
+                {
+                Headline = "Test",
+                Description = "Test2",
+                BackgroundImageUrl = "/Images/HelldiversLogo.jpg",
+                ReadMoreLink = "/ReadMore1"
+                })
+            </div>
+            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+                @Html.Partial("_Card", new CardModel
+                {
+                Headline = "Test",
+                Description = "Test2",
+                BackgroundImageUrl = "/Images/HelldiversLogo.jpg",
+                ReadMoreLink = "/ReadMore1"
+                })
+            </div>
+            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+                @Html.Partial("_Card", new CardModel
+                {
+                Headline = "Test",
+                Description = "Test2",
+                BackgroundImageUrl = "/Images/HelldiversLogo.jpg",
+                ReadMoreLink = "/ReadMore1"
+                })
+            </div>
+            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+                @Html.Partial("_Card", new CardModel
+                {
+                Headline = "Test",
+                Description = "Test2",
+                BackgroundImageUrl = "/Images/HelldiversLogo.jpg",
+                ReadMoreLink = "/ReadMore1"
+                })
+            </div>
+            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+                @Html.Partial("_Card", new CardModel
+                {
+                Headline = "Test",
+                Description = "Test2",
+                BackgroundImageUrl = "/Images/HelldiversLogo.jpg",
+                ReadMoreLink = "/ReadMore1"
+                })
+            </div>
+            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+                @Html.Partial("_Card", new CardModel
+                {
+                Headline = "Test",
+                Description = "Test2",
+                BackgroundImageUrl = "/Images/HelldiversLogo.jpg",
+                ReadMoreLink = "/ReadMore1"
+                })
+            </div>
+            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+                @Html.Partial("_Card", new CardModel
+                {
+                Headline = "Test",
+                Description = "Test2",
+                BackgroundImageUrl = "/Images/HelldiversLogo.jpg",
+                ReadMoreLink = "/ReadMore1"
+                })
+            </div>
+        </div>
+    </div>
 </div>
-    @Html.Partial("_Footer")
+@Html.Partial("_Footer")
