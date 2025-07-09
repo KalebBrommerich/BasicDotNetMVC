@@ -1,6 +1,6 @@
 @model BasicDotNetMVC.Models.CardModel
 
-<div class="w-full h-full bg-gray-800 rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="w-full h-full bg-gray-800 rounded-xl overflow-hidden shadow-md flex flex-col flex-grow">
   @Html.Partial("_HeadlineParagraphImage", new BasicDotNetMVC.Models.HeadlineParagraphImageModel
   {
     Headline = @Model.Headline,
@@ -9,7 +9,7 @@
     })
     <!-- Button -->
     <a href="@Model.ReadMoreLink"
-       class="mt-auto inline-block text-center bg-yellow-300 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg transition">
+       class=" text-center bg-yellow-300 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg transition">
       Read More
     </a>
 </div>

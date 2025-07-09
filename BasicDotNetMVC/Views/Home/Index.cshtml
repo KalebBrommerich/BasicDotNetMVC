@@ -1,8 +1,8 @@
 ﻿<link rel="stylesheet" href="/css/output.css" />
 @using BasicDotNetMVC.Models
-<div class="min-h-screen flex flex-col bg-gray-700 text-white justify-center">
+<body class="min-h-screen max-w-screen flex flex-wrap flex-col bg-gray-700 text-white justify-center ">
     @Html.Partial("_Header")
-    <div class="h-128  w-full flex justify-center items-center">
+    <div class="h-128  w-full flex justify-center items-center px-8">
         @Html.Partial("_ImageNextToParagraph", new ImageNextToParagraphModel
         {
         Description = "Join the Helldivers today and protect Super Earth from the alien menace. Enlist now and become a hero of Super Earth! Liberty, Managed Democracy, and Freedom.",
@@ -15,8 +15,8 @@
     </section>
 
 
-    <div class=" w-full h-150 flex justify-center items-center">
-        <div class="w-1/2 h-full flex justify-center items-center ml-4 pl-4">
+    <div class=" w-full h-300 lg:h-150 flex flex-col flex-grow lg:flex-row justify-center items-center px-8">
+        <div class="w-full lg:w-1/2 h-1/2 lg:h-full flex justify-center items-center  lg:ml-4 lg:pl-4">
             @Html.Partial("_HeadlineParagraphImage", new HeadlineParagraphImageModel
             {
             Headline = "Know Your Enemy",
@@ -24,7 +24,7 @@
             BackgroundImageUrl = "/Images/HelldiverEagle.png"
             })
         </div>
-        <div class="container w-1/2 h-auto object-contain mr-4 pl-4 items-center">
+        <div class="container w-full lg:w-1/2 h-1/2 lg:h-auto object-contain m-4 pt-4 lg:pl-4 lg:pt-0 items-center">
             @Html.Partial("_Carousel")
         </div>
     </div>
@@ -33,9 +33,10 @@
         <hr class="border-yellow-600 border-t-2 w-3/4" />
     </section>
 
-    <div class="w-full h-auto object-contain items-center">
+    <div class="w-full h-auto object-contain items-center px-8">
         <div class="flex flex-wrap justify-center items-center ">
-            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+            <!-- each card would normally have a seperate picute and text-->
+            <div class="h-96 lg:h-64 w-96 lg:w-64 p-4 row-span-1 flex justify-center items-center">
                 @Html.Partial("_Card", new CardModel
                 {
                 Headline = "Test",
@@ -44,7 +45,7 @@
                 ReadMoreLink = "/ReadMore1"
                 })
             </div>
-            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+            <div class="h-96 lg:h-64 w-96 lg:w-64 p-4 row-span-1 flex justify-center items-center">
                 @Html.Partial("_Card", new CardModel
                 {
                 Headline = "Test",
@@ -53,7 +54,7 @@
                 ReadMoreLink = "/ReadMore1"
                 })
             </div>
-            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+            <div class="h-96 lg:h-64 w-96 lg:w-64 p-4 row-span-1 flex justify-center items-center">
                 @Html.Partial("_Card", new CardModel
                 {
                 Headline = "Test",
@@ -62,7 +63,7 @@
                 ReadMoreLink = "/ReadMore1"
                 })
             </div>
-            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+            <div class="h-96 lg:h-64 w-96 lg:w-64 p-4 row-span-1 flex justify-center items-center">
                 @Html.Partial("_Card", new CardModel
                 {
                 Headline = "Test",
@@ -71,7 +72,7 @@
                 ReadMoreLink = "/ReadMore1"
                 })
             </div>
-            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+            <div class="h-96 lg:h-64 w-96 lg:w-64 p-4 row-span-1 flex justify-center items-center">
                 @Html.Partial("_Card", new CardModel
                 {
                 Headline = "Test",
@@ -80,7 +81,7 @@
                 ReadMoreLink = "/ReadMore1"
                 })
             </div>
-            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+            <div class="h-96 lg:h-64 w-96 lg:w-64 p-4 row-span-1 flex justify-center items-center">
                 @Html.Partial("_Card", new CardModel
                 {
                 Headline = "Test",
@@ -89,7 +90,7 @@
                 ReadMoreLink = "/ReadMore1"
                 })
             </div>
-            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+            <div class="h-96 lg:h-64 w-96 lg:w-64 p-4 row-span-1 flex justify-center items-center">
                 @Html.Partial("_Card", new CardModel
                 {
                 Headline = "Test",
@@ -98,7 +99,7 @@
                 ReadMoreLink = "/ReadMore1"
                 })
             </div>
-            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+            <div class="h-96 lg:h-64 w-96 lg:w-64 p-4 row-span-1 flex justify-center items-center">
                 @Html.Partial("_Card", new CardModel
                 {
                 Headline = "Test",
@@ -107,7 +108,7 @@
                 ReadMoreLink = "/ReadMore1"
                 })
             </div>
-            <div class="h-64 w-64 p-4 row-span-1 flex justify-center items-center">
+            <div class="h-96 lg:h-64 w-96 lg:w-64 p-4 row-span-1 flex justify-center items-center">
                 @Html.Partial("_Card", new CardModel
                 {
                 Headline = "Test",
@@ -118,5 +119,5 @@
             </div>
         </div>
     </div>
-</div>
-@Html.Partial("_Footer")
+    @Html.Partial("_Footer")
+</body>
